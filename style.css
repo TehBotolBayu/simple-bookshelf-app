@@ -1,0 +1,210 @@
+:root{
+    --dgreen: #21897F;
+    --green: #3BA99C;
+    --lgreen: #69D1C5;
+    --lpurple: #7EBCE6;
+    --purple: #8980F5;
+    --bg: #e0fffb
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+    padding: 150px 0 100px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.head_bar{
+    background-color: var(--green);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.head_bar__title{
+    margin-top: 20px;
+}
+
+.input_section{
+    position: fixed;
+    background-color: var(--bg);
+    width: 90vw;
+    height: 50vh;
+    top:50%;
+    left:50%;
+    margin-top: -25vh;
+    margin-left: -45vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+.input_section > h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#inputBook{
+    height: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+#edit_section{
+    display:block;
+}
+
+.search_section{
+    background-color: var(--green);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.input, .input_inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#edit_section{
+    display: none;
+}
+
+.edit_option{
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit_option button{
+    min-width: 120px;
+}
+
+#bookSubmit{
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    border: none;
+    background-color: var(--dgreen);
+    color: white;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    border: none;
+    background-color: var(--dgreen);
+    color: white;
+}
+
+.input_section label{
+    font-size: 20px;
+}
+
+.book_shelf{
+    background-color: #e0fffb;
+}
+
+.book_shelf > h2{
+    margin: 10px 15px;
+    font-size: 20px;
+}
+
+footer{
+    position: fixed;
+    background-color: #21897F;
+    bottom:0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+footer div:hover{
+    cursor: pointer;
+    background-color: var(--bg);
+}
+
+.book_item{
+    background-color: var(--green);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.action{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.action button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 100%;
+    margin: 0 5px;
+    color: white;
+}
+
+.green{
+    background-color: var(--dgreen);
+}
+
+.red{
+    background-color: var(--purple);
+}
+
+.blue{
+    background-color: var(--lgreen);
+}
+
+@media (min-width: 1024px) {
+    .action {
+        max-width: 50%;
+    }
+}
+
+#complete{
+    display: none;
+}
