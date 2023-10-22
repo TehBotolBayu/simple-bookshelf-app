@@ -90,7 +90,6 @@ function edit(title, author, year, isDone, idx) {
 
 function updateBuku(ntitle, nauthor, nyear, nisDone, idx){    
     
-    
     data = data.map((element) => {
         if(element.id == idx){
             element.title = ntitle;
@@ -127,10 +126,6 @@ function pindah(title, author, year, isDone, idx){
     };
     data.push(bookData);
     saveData();
-}
-
-function l(){
-    console.log(data);
 }
 
 function createBook(title, author, year, isDone, idx){

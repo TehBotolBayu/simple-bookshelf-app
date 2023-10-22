@@ -141,6 +141,14 @@ main{
     color: white;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
+.green, .red, .blue:hover{
+    cursor: pointer;
+}
+
 .input_section label{
     font-size: 20px;
 }
@@ -184,6 +192,15 @@ footer p{
 footer div:hover{
     cursor: pointer;
     background-color: rgb(239, 245, 254);
+}
+
+footer div:hover > img{
+    transform: translate(0px, -10px);
+    transition: transform 0.2s ease-in-out;
+}
+
+footer div:hover > p{
+    font-weight: bolder;
 }
 
 .book_item{
