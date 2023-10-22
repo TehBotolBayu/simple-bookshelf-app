@@ -4,7 +4,7 @@
     --lgreen: #69D1C5;
     --lpurple: #7EBCE6;
     --purple: #8980F5;
-    --bg: #e0fffb
+    --bg: rgb(239, 245, 254);
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body{
-    background-color: var(--bg);
+    background-color: rgb(239, 245, 254);
     padding: 150px 0 100px;
 }
 
@@ -23,6 +23,8 @@ input{
     border-radius: 10px;
     border: none;
     font-size: 16px;
+    border: 1px solid rgb(189, 189, 189);
+    box-shadow: 0 5px 15px rgb(175, 175, 175);
 }
 
 header{
@@ -30,11 +32,12 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    background-color: rgb(239, 245, 254);
 }
 
 .head_bar{
-    background-color: var(--green);
-    color: white;
+    color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 14px;
@@ -45,9 +48,26 @@ header{
     margin-top: 20px;
 }
 
+#searchBookTitle{
+    width: 70%;
+}
+
+#searchSubmit{
+    border: none;
+    background-color: transparent;
+}
+
+#searchSubmit:hover{
+    cursor: pointer;
+}
+
+main{
+    margin: 40px 0;
+}
+
 .input_section{
     position: fixed;
-    background-color: var(--bg);
+    background-color: rgb(248, 248, 248);
     width: 90vw;
     height: 50vh;
     top:50%;
@@ -55,7 +75,8 @@ header{
     margin-top: -25vh;
     margin-left: -45vw;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0 10px 15px rgb(153, 153, 153);
     display: none;
 }
 
@@ -77,7 +98,6 @@ header{
 }
 
 .search_section{
-    background-color: var(--green);
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -125,9 +145,6 @@ header{
     font-size: 20px;
 }
 
-.book_shelf{
-    background-color: #e0fffb;
-}
 
 .book_shelf > h2{
     margin: 10px 15px;
@@ -135,24 +152,29 @@ header{
 }
 
 footer{
+    border-top: 1px solid rgb(146, 146, 146);
     position: fixed;
-    background-color: #21897F;
+    background-color: rgb(248, 248, 248);
     bottom:0;
     width: 100vw;
-    height: 10vh;
+    height: 15%;
+    
+}
+
+.menuwrap{
     display: flex;
     flex-direction: row;
+    height: 100%;
+    margin: auto;
 }
 
 footer div{
-    border: 1px solid black;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
 }
 
 footer p{
@@ -161,14 +183,15 @@ footer p{
 
 footer div:hover{
     cursor: pointer;
-    background-color: var(--bg);
+    background-color: rgb(239, 245, 254);
 }
 
 .book_item{
-    background-color: var(--green);
+    background-color:rgb(255, 255, 255);
     padding: 15px;
     margin: 15px;
     border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(209, 209, 209);
 }
 
 .action{
@@ -202,6 +225,19 @@ footer div:hover{
 @media (min-width: 1024px) {
     .action {
         max-width: 50%;
+    }
+    .menuwrap{
+        width: 60%;
+    }
+    #searchBookTitle{
+        width: 50vw;
+    }
+    .book_shelf{
+        margin: 0 10%;
+    }
+    .input_section{
+        width: 50vw;
+        margin-left: -25vw;
     }
 }
 

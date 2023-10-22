@@ -15,17 +15,14 @@
   </div>
   <section class="search_section">
     <form id="searchBook">
-      <label for="searchBookTitle">Cari</label>
-      <input id="searchBookTitle" type="text">
-      <button id="searchSubmit" type="submit">Cari</button>
+      <input id="searchBookTitle" type="text" placeholder="Cari Buku">
+      <button id="searchSubmit" type="submit"><img width="20px" src="./asset/search.png"></button>
     </form>
   </section>
 </header>
 <main>
   
-
-  
-  <section class="input_section" id="input_section">
+<section class="input_section" id="input_section">
     <h2>Masukkan Buku Baru</h2>
     <form id="inputBook">
       <div class="input">
@@ -75,45 +72,27 @@
   </section>
 
   <section class="book_shelf"  id="incomplete">
-    <h2>Belum Selesai dibaca</h2>
+    <h2>Belum Selesai Dibaca</h2>
 
     <div id="incompleteBookshelfList" class="book_list">
-<!--      <article class="book_item">-->
-<!--        <h3>Book Title</h3>-->
-<!--        <p>Penulis: John Doe</p>-->
-<!--        <p>Tahun: 2002</p>-->
-<!--    -->
-<!--        <div class="action">-->
-<!--          <button class="green">Selesai dibaca</button>-->
-<!--          <button class="red">Hapus buku</button>-->
-<!--          <button class="blue">Edit buku</button> -->
-<!--        </div>-->
-<!--      </article>--> 
     </div>
   </section>
   
   <section class="book_shelf" id="complete">
-    <h2>Selesai dibaca</h2>
+    <h2>Selesai Dibaca</h2>
     
     <div id="completeBookshelfList" class="book_list">
-<!--      <article class="book_item">-->
-<!--        <h3>Book Title</h3>-->
-<!--        <p>Penulis: John Doe</p>-->
-<!--        <p>Tahun: 2002</p>-->
-<!--        -->
-<!--        <div class="action">-->
-<!--          <button class="green">Belum selesai di Baca</button>-->
-<!--          <button class="red">Hapus buku</button>-->
-<!--        </div>-->
-<!--      </article>-->
     </div>
   </section>
-  <footer>
+</main>
+<footer>
+  <nav class="menuwrap">
+
     <div id="belum"><img width="40px" src="./asset/agenda.png" /><p>Selesai Dibaca</p></div>
     <div id="tambah"><img width="40px" src="./asset/add.png" /><p>Tambah Buku</p></div>
     <div id="sudah"><img width="40px" src="./asset/open-book.png" /><p>Belum Dibaca</p></div>
-  </footer>
-</main>
+  </nav>
+</footer>
 
 <script src="index.js"></script>
 
